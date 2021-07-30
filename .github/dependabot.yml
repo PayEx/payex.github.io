@@ -6,7 +6,10 @@ updates:
     interval: daily
     time: "04:00"
   open-pull-requests-limit: 99
-  ignore:
-  - dependency-name: github-pages
-    versions:
-    - "213"
+- package-ecosystem: github-actions
+  directory: "/"
+  schedule:
+    interval: daily
+    time: "03:00"
+    timezone: Europe/Oslo
+  open-pull-requests-limit: 99
